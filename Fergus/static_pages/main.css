@@ -48,3 +48,33 @@ p, h1, h2 , * {
 #paragraph1 {
     color:chartreuse
 }
+
+/* 
+The '.' before the identifier allows us to use an identifier by class.
+It is recommended to use class when using style for multiple elements and id
+for a unique identifier (mainly for JS DOM manipulation).
+*/
+
+.paragraph2 {
+    color:violet;
+    /* We can use the font-size property, the px on the end stands for pixels.*/
+    font-size: 20px;
+    /*fonts*/
+    font-family: Arial, Helvetica, sans-serif;
+    /*boldness of the font*/
+    font-weight: 100;
+    /*concrete font style*/
+    font-style: italic;
+    /*alignment*/
+    text-align: left;
+    text-decoration:line-through;
+
+
+}
+
+#aquamarine_box {
+    width: 200px;
+    height:100px;
+    background-color: aquamarine;
+    
+}
