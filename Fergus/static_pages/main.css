@@ -1,0 +1,50 @@
+/* 
+-we use a selector which points to an HTML element
+
+-then the declaration block is in the form:
+
+property:value
+
+-All declarations are selarated by ';' 
+
+-The set of declarations for a selector are put in:
+
+{...}
+
+- The final form is:
+
+seletor {proterty1:value1; property2:value2; .... ; propertyn:valuen
+
+*/
+p {color:red;
+    font-size:12px;
+    text-align:center
+}
+
+section p {
+    color:blueviolet;
+    text-align: center;
+}
+
+/* 
+we can select multiple elements with the ',' between different 
+selectors
+*/
+h1, h2 {color:blue;
+    text-align:center
+}
+
+
+/* There's the universal selector '*' which selects all elements*/
+/* The document is read from top to bottom so other elements can be overwritten*/
+
+p, h1, h2 , * {
+    text-align:center;
+    color:orange
+
+}
+
+/* the '#' before the identifier allows us to use an identifier by id*/
+#paragraph1 {
+    color:chartreuse
+}
