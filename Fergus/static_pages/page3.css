@@ -1,0 +1,17 @@
+/* z-index decides which element goes in front of the other*/
+
+p {
+    color:red;
+    z-index:100;
+}
+
+.background {
+    
+    width: 200px;
+    height:100px;
+    background-color: rgb(45, 33, 161);
+    z-index:50;
+    border: red solid 22px;
+    cursor: pointer;
+    
+}
