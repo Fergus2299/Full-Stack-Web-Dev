@@ -60,10 +60,46 @@ is done at the top of the stylesheet.
 }
 body {
     background-color: #1e1e1e;
-
 }
+
+/* position = static is the
+default. 
+- static: 
+normal linear flow of the page.
+
+- relative:
+is positioned relative to its normal position.
+
+Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away 
+from its normal position. Other content will not be adjusted to fit into any gap left by the element
+
+- fixed: 
+is positioned relative to the viewport, which means it always stays in the 
+same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element.
+
+
+absolute: 
+An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of 
+positioned relative to the viewport, like fixed).
+
+However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with 
+page scrolling.
+*/
 .position-div {
+    position:sticky;
+
+    right: 0px;
+    top: 50px;
     height: 100px;
     width: 100px;
     background-color: blue;   
+    /* z-index controls what's infront */
+    z-index: 100;
+}
+.position-div2 {
+    position: absolute;
+    height: 200%;
+    width: 500px;
+    background-color: red;   
+    z-index: 50;
 }

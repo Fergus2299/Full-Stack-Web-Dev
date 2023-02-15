@@ -17,12 +17,15 @@ a {
     cursor: pointer;
 }
 .header-main {
+    /* position being fixed allows the nav bar to stay on the page even as we zoom */
+    position:fixed;
+    top:0;
+
     width: 100%;
     height: 60px;
     background-color:#fff;
     display: flex;
     justify-content: space-between;
-
 }
 
 .header-main-logo {
@@ -37,6 +40,7 @@ a {
     margin-right: 20px;
 }
 .header-main-nav {
+
     width: fit-content;
     height: 100%;
     display: flex;
@@ -105,4 +109,10 @@ the mouse hovers over it */
 }
 .header-main-sm-gh:hover {
     background-image:url(../images/github.jpg);
+}
+
+.box1 {
+    width: 100px;
+    height: 200%;
+    color: red;
 }
