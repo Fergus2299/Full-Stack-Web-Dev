@@ -53,7 +53,17 @@ The ':hover' tells you what to add to the .image when the mouse is hovering
 over it. There's a flicker when you first hover since this is the browser
 loading the image in. You can get around this by preloading the image, which
 is done at the top of the stylesheet.
+
 */
 .image:hover {
         background-image: url(/Fergus/static_pages/images/alsatian-modified.jpg);
+}
+body {
+    background-color: #1e1e1e;
+
+}
+.position-div {
+    height: 100px;
+    width: 100px;
+    background-color: blue;   
 }

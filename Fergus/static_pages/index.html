@@ -4,30 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/reset.css">
 
+    <title>Document</title>
 </head>
 <body>
-    <section>  
-        <h1>This is the first heading</h1>
-        <p>first para</p>
-        <a target="_blank" href="2nd page.html">go to the page that demonstrates floats.</a>
-        <a target="_blank" href="3rd page.html">go to next page.</a>
-        <a target="_blank" href="resetAndImages.html">go to page which demonstrates reset.css and images</a>
-
-    </section>
-
-    <h2>Second Para:</h2>
-    <p>hello world hello</p>
-    <p id="paragraph1">this paragraph has an id</p>
-    <p class="paragraph2">this paragraph has a class</p>
-    <p class="paragraph2">this paragraph has a class</p>
-
-    <div id="aquamarine_box">
-
-    </div>
-
-
+    <header class="header-main">
+        <!--container for logo-->
+        <div class="header-main-logo">
+            <img src="images/facebook.png" alt="facebook-logo">
+            <!-- navigation bar -->
+            <nav class="header-main-nav">
+                <!-- unordered list can be used with navigation bars
+                it is a bit like bullet points. placeholder for a link is 
+                the '#'-->
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="your_profile.html">YOUR PROFILE</a></li>
+                    <li><a href="about_us.html">ABOUT US</a></li>
+                </ul>
+                
+            </nav>
+        </div>
+        
+        <!-- social media links -->
+        <div class="header-main-sm">
+            <!-- linkedin -->
+            <a href="https://www.linkedin.com/"><div class="header-main-sm-in"></div></a>
+            <!-- github -->
+            <a href="https://github.com/"><div class="header-main-sm-gh"></div></a>
+        </div>
+    </header>
+    
 </body>
 </html>

@@ -16,6 +16,10 @@ property:value
 seletor {proterty1:value1; property2:value2; .... ; propertyn:valuen
 
 */
+
+body {
+    background-color: #1e1e1e;
+}
 p {color:red;
     font-size:12px;
     text-align:center

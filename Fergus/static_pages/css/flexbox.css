@@ -10,16 +10,31 @@ page.*/
     we can use the %'s for the dimensions of the elements to fit them nicely into the container.
     */
     width: 100%;
-    height:600px;
+    height:1000px;
     background-color: black;
 
     display: flex;
     flex-direction:row;
     flex-wrap:wrap;
     justify-content:center;
+    gap:0% 0%;
 }
 .header-main div {
     height: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*
+    the following lines
+    justify-content:center; // means horizontal centering
+    align-items:center;  // means vertical centering
+    gives us perfect centering within the diivs
+    */
+    justify-content: center;
+    align-items: center;
+    gap: 50px 50px;
+    
+
 }
 .header-main .div-1 {
     width: 50%;
