@@ -7,9 +7,10 @@ function Person(name, eyeCol, height) {
     this.updateHeight = function() {
         return ++this.height;
     };
-
 }
 
 // instantiating the person
 let person1 = new Person('Fergus', 'green', 176)
-console.log(person1.updateHeight())
+let person2 = new Person('Orla', 'blue', 150)
+
+console.log(person2.updateHeight())

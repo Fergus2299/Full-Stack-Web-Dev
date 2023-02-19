@@ -40,11 +40,9 @@ a {
     margin-right: 20px;
 }
 .header-main-nav {
-
     width: fit-content;
     height: 100%;
     display: flex;
-
 }
 
 /* we need to target each list item */
@@ -53,7 +51,6 @@ a {
     display: flex;
     height: 100%;
     align-items: center;
-
 }
 /* we need to target each list item */
 .header-main-nav ul li {
@@ -84,9 +81,6 @@ a {
     display: flex;
     align-items: center;
     column-gap: 10px;
-
-
-
 }
 /* logos start out black and white but will load coloured if 
 the mouse hovers over it */

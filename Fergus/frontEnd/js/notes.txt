@@ -1,16 +1,3 @@
 Objects:
+- https://dmitripavlutin.com/javascript-classes-complete-guide/#2-initialization-constructor
 
-// object constructor (which is obviously a function)
-function Person(name, eyeCol, height) {
-    this.name = name;
-    this.eyeCol = eyeCol;
-    this.height = height;
-    // making a method for the function
-    this.updateAge = function() {
-        return ++this.age;
-    };
-
-}
-
-// instantiating the person
-let person1 = new Person('Fergus', 'green', 176)

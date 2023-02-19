@@ -1,0 +1,5 @@
+Express: framework which creates our restAPI
+Cors: allows connection between frontend and servers
+MySQL2: allows some nice connections to MySQL2
+Sequelize: ORM for writing SQL nicer
+nodemon: reloads webpage every save

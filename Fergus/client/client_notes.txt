@@ -1,0 +1,13 @@
+react allows the app to be created within a single html file (index.html).
+this contains a div with id ="root". the JS files are written in the scr directory.
+In the index.js the component 'App' is put into this root element.
+
+jsx is the syntax where the javascript can return html or js mixed with html.
+
+
+
+
+
+axios: allows to make easy api requests from the front end
+*package* - es7: allows react shortcuts e.g. rfce
+yup: package which allows form validation
