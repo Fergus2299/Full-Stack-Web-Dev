@@ -28,28 +28,30 @@ function CreatPost() {
     <div className='createPostPage'>
       <Formik initialValues={initialValues} onSubmit={onSubmit} validationSchema={validationSchema}>
         <Form>
-          <label>Title: </label>
-          <ErrorMessage name="title" component="span"/>
-          <Field
-            id="inputCreatePost" 
-            name="title" 
-            placeholder="(e.g. Weather Today)"
-          />
-          <label>Username: </label>
-          <ErrorMessage name="username" component="span"/>
-          <Field 
-            id="inputCreatePost" 
-            name="username" 
-            placeholder="(e.g. Jack)"
-          />
-          <label>Post: </label>
-          <ErrorMessage name="postText" component="span"/>
-          <Field 
-            id="inputCreatePost" 
-            name="postText" 
-            placeholder="(e.g. it's raining)"
-          />
-          <button type="submit">Submit</button>
+          <div className='input-fields'>
+            <label>Title: </label>
+            <ErrorMessage name="title" component="span"/>
+            <Field
+              id="inputCreatePost" 
+              name="title" 
+              placeholder="(e.g. Weather Today)"
+            />
+            <label>Username: </label>
+            <ErrorMessage name="username" component="span"/>
+            <Field 
+              id="inputCreatePost" 
+              name="username" 
+              placeholder="(e.g. Jack)"
+            />
+            <label>Post: </label>
+            <ErrorMessage name="postText" component="span"/>
+            <Field 
+              id="inputCreatePost" 
+              name="postText" 
+              placeholder="(e.g. it's raining)"
+            />
+          </div>
+          <button className='submit-post' type="submit">Submit</button>
         </Form>
       </Formik>
     </div>

@@ -17,7 +17,7 @@ function Home() {
   }, []);
 
   return (
-    <div>
+    <div className='post-div'>
       {listOfPosts.map((value, key) => {
         return (
           <div className="post">

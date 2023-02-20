@@ -2,7 +2,7 @@
   "development": {
     "username": "root",
     "password": "password",
-    "database": "Full-Stack-Web-Dev",
+    "database": "social_media",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
