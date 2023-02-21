@@ -1,0 +1,24 @@
+.welcome {
+  position: fixed;
+  top: 130px;
+  width: 30%;
+  right: 30px;
+  white-space: nowrap;
+}
+.welcome p {
+  font-weight: bold;
+  font-size: 16px;
+  display: inline-block;
+}
+.welcome button {
+  display: inline-block;
+  width: 108px;
+  height: 29px;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 16px;
+  border: none;
+  background-color: #fff;
+  color: #1e8fcf;
+  padding-left: 3px;
+}

@@ -1,0 +1,36 @@
+.NavbarItems {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 0px;
+  align-items: center;
+  width: 60%;
+  background-color: #fff;
+  height: 80px;
+  position: fixed;
+  left: 20px;
+  top: 160px;
+  z-index: 1000;
+}
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 100px;
+  list-style: none;
+  align-items: center;
+}
+
+.nav-links {
+  text-decoration: none;
+  color: #222;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.7rem 1rem;
+  white-space: nowrap;
+  padding: 20px;
+}
+
+.nav-menu .nav-links:hover {
+  background-color: rgb(216, 216, 216);
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out;
+}
