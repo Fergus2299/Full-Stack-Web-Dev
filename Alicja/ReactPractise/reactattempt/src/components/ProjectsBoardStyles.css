@@ -1,0 +1,25 @@
+.Board h1 {
+  text-align: left;
+  padding-top: 50px;
+  margin-left: 100px;
+}
+.Board h1:after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 80%;
+  border: 1px solid #000000;
+  margin-top: 8px;
+}
+button {
+  margin: 50px 0;
+  width: 80%;
+  border: none;
+  background-color: #84b3c7;
+  color: #fff;
+  padding: 14px 28px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+}
