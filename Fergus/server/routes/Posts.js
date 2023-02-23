@@ -13,6 +13,14 @@ router.get("/", async (req, res) => {
     res.json(listOfPosts);
 });
 
+// get an individual post
+router.get("/byId/:id", async(req, res) => {
+    const id = req.params.id;
+    // finding by primary key
+    const post = await Posts.findByPk(id);
+    res.json(post);
+});
+
 // post requests
 // we send post request to this route and it creates an object which is sent to models
 // inserts data into our table.

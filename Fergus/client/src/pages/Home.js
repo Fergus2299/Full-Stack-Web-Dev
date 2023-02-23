@@ -3,9 +3,12 @@ import axios from "axios";
 // hooks: use effect allows a func to be called when the page rerenders
 // hooks: use state is a list of all the posts from api request
 import {useEffect, useState} from "react";
+import {useNavigate} from "react-router-dom";
 
 function Home() {
   const [listOfPosts, setListOfPosts] = useState([]);
+
+  let navigate = useNavigate()
   useEffect(() => {
     
     // we want to get the posts from the database as the page renders
@@ -20,7 +23,10 @@ function Home() {
     <div className='post-div'>
       {listOfPosts.map((value, key) => {
         return (
-          <div className="post">
+          // each post will take us to it's post page
+          <div className="post" onClick={() => {
+            navigate(`/post/${value.id}`);
+          }}>
             <div className="post-top-left">
               <div className="title">{value.title}</div>
               <div className="username">{value.username}</div>

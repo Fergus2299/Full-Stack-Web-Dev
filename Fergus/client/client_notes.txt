@@ -11,3 +11,7 @@ jsx is the syntax where the javascript can return html or js mixed with html.
 axios: allows to make easy api requests from the front end
 *package* - es7: allows react shortcuts e.g. rfce
 yup: package which allows form validation
+
+
+Hooks:
+e.g. useState, useEffect.
