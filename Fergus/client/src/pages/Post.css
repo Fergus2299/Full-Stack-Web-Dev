@@ -1,0 +1,17 @@
+.post-body {
+    margin-top: 70px;
+    height: 850px;
+    display: flex;
+    flex-direction: row;
+}
+.posts-section {
+    width: 50%;
+    height:100%;
+
+
+}
+.comments-section {
+    width: 50%;
+    height:100%;
+}
+

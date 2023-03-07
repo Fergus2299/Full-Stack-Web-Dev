@@ -3,3 +3,7 @@ Cors: allows connection between frontend and servers
 MySQL2: allows some nice connections to MySQL2
 Sequelize: ORM for writing SQL nicer
 nodemon: reloads webpage every save
+bcrypt: allows us to hash passwords
+    - hashing works because it's a oneway function, the admin or an attacker
+    cannot unhash the password so it's very secure.
+jsonwebtoken: for webtokens

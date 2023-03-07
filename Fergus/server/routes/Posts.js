@@ -1,5 +1,4 @@
 // this file contains all the routes for posts
-
 const { application } = require("express");
 const express = require("express");
 const router = express.Router();

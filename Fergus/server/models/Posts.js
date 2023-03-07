@@ -15,5 +15,11 @@ module.exports =  (sequelize, DataTypes) => {
             allowNull: false,
         },
     });
+    // creating foreign key to postId
+    Posts.associate = (models) => {
+        Posts.hasMany(models.Comments, {
+            onDelete: "cascade",
+        });
+    };
     return Posts;
 };

@@ -30,10 +30,8 @@ function Home() {
             <div className="post-top-left">
               <div className="title">{value.title}</div>
               <div className="username">{value.username}</div>
-              <div className="date">{value.createdAt}</div>
+              <div className='date'>{value.createdAt}</div>
             </div>
-            {/* <div className="username">{value.username}</div> */}
-            {/* <div className="date">{value.createdAt}</div> */}
             <div className="body">{value.postText}</div>
           </div>
         );

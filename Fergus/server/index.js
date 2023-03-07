@@ -14,8 +14,14 @@ const db  = require('./models');
 
 
 // routes for posts, loading file an 
-const postRouter = require('./routes/Posts');
+const postRouter = require("./routes/Posts");
 app.use("/posts", postRouter);
+
+const commentRouter = require("./routes/Comments");
+app.use("/comments", commentRouter);
+
+const userRouter = require("./routes/Users");
+app.use("/users", userRouter);
 
 // whenever we want to run the server, we need to first run the models folder, which checks the databases
 // creates databases where needed. It knows which database because of the config directory.

@@ -5,8 +5,12 @@ import { Formik, Form, Field, ErrorMessage} from 'formik'
 import * as Yup from 'yup';
 // to make a post
 import axios from 'axios';
+// to 
+import {useNavigate} from "react-router-dom";
 
 function CreatPost() {
+  let navigate = useNavigate();
+
   // creating the object for the form
   const initialValues = {
     title:"",
@@ -21,11 +25,12 @@ function CreatPost() {
   });
   const onSubmit = (data) => {
     axios.post("http://localhost:3001/posts", data).then((response) => {
-    console.log("it worked!");
+      console.log(response);
+      console.log(navigate("/"));
     });
   };
   return (
-    <div className='createPostPage'>
+    <div className='Page'>
       <Formik initialValues={initialValues} onSubmit={onSubmit} validationSchema={validationSchema}>
         <Form>
           <div className='input-fields'>
